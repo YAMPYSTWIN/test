@@ -1,0 +1,60 @@
+
+
+
+#loading {
+    background-color: red;
+    width: 120px;
+    height: 5px;
+    animation: linear 10s myloading
+}
+
+@keyframes myloading {
+
+0%{ width: 120px;
+    height: 2px;
+    background-color: indigo;}
+25%{ width: 300px;
+    height: 2px;
+    background-color: lightseagreen;}
+50%{ width: 600px;
+    height: 2px;
+    background-color: navy;}
+100%{width: 800px;
+height: 2px;
+background-color: yellow;}
+
+}
+
+
+#main {
+    display: inline-flex;
+    padding-left: 130px;
+
+}
+#box1{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    margin: 15px;
+    animation: linear 10s myrotate;
+}
+
+#box2{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    margin: 15px;
+    animation: linear 10s myrotate;
+}
+#box3{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    margin: 15px;
+    animation: linear 10s myrotate;
+}
+
+@keyframes myrotate {
+    from{transform: rotate(90deg);}
+    to{transform: rotate(360deg);}
+}
